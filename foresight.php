@@ -82,10 +82,23 @@ HTML;
 	$html .=<<<HTML
 		<!-- size the iframe dynamically -->
 		<script type='text/javascript'>
-			wrapper_height = jQuery('div#wpwrap').height();
-			nag_height     = jQuery('div.update-nag').height();
+			// initialize the jQuery tabs UI
 			jQuery("#cal_fs_tabs").tabs();
-			jQuery('div#cal_fs_tabs iframe').css('height', (wrapper_height - 265) - nag_height);
+			
+			// define the resize function
+			function cal_fs_resize(){				
+				window_height = jQuery(window).innerHeight();
+				nag_height    = jQuery('div.update-nag').height();
+				jQuery('div#cal_fs_tabs iframe').css('height', (window_height - 265) - nag_height);
+			}
+			
+			// size the plugin on the first load
+			cal_fs_resize();
+			
+			// resize the plugin on window.resize
+			jQuery(window).resize(function(){
+				cal_fs_resize();
+			})
 		</script>
 		
 		<p style='margin-bottom:0;text-align:center'>Plugin by <a href='http://chris-allen-lane.com?ref=foresight' target='_blank'>Chris Allen Lane</a>.</p>
