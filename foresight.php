@@ -18,8 +18,10 @@ Author URI: http://chris-allen-lane.com
  */ 
 add_action('admin_menu', 'cal_fs_create_admin_menus');
 function cal_fs_create_admin_menus(){
-	wp_register_style('cal_fs_main', "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/themes/smoothness/jquery-ui.css");
+	wp_register_style('cal_fs_main', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/themes/smoothness/jquery-ui.css');
 	wp_enqueue_style('cal_fs_main');
+	wp_register_script('cal_fs_main', 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js');
+	wp_enqueue_script('cal_fs_main');
 	
 	# main menu
 	add_menu_page(
@@ -46,9 +48,12 @@ function cal_foresight_view(){
 	);
 	
 	# assemble the HTML
-	$html ="<div id='cal_fs_tabs'>
+	$html =<<<HTML
+	<div class='wrap'>
+	<h2>Foresight</h2>
+	<div id='cal_fs_tabs'>
 		<ul>
-	";
+HTML;
 	# print the tab navigation
 	$i = 1;
 	foreach($trackers as $tracker => $url){
@@ -73,16 +78,16 @@ HTML;
 		
 	# include the JavaScript dependencies
 	$html .=<<<HTML
-	<!-- use jQuery UI to implement the tabs -->
-	<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js'></script>
-	
-	<!-- size the iframe dynamically -->
-	<script type='text/javascript'>
-		wrapper_height = jQuery('div#wpwrap').height();
-		nag_height     = jQuery('div.update-nag').height();
-		jQuery("#cal_fs_tabs").tabs();
-		jQuery('div#cal_fs_tabs iframe').css('height', (wrapper_height - 180) - nag_height);
-	</script>
+		<!-- size the iframe dynamically -->
+		<script type='text/javascript'>
+			wrapper_height = jQuery('div#wpwrap').height();
+			nag_height     = jQuery('div.update-nag').height();
+			jQuery("#cal_fs_tabs").tabs();
+			jQuery('div#cal_fs_tabs iframe').css('height', (wrapper_height - 250) - nag_height);
+		</script>
+		
+		<p style='margin-bottom:0;text-align:center'>Plugin by <a href='http://chris-allen-lane.com' target='_blank'>Chris Allen Lane</a></p>
+	</div>
 HTML;
 	echo $html;
 }
