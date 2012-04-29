@@ -9,7 +9,7 @@ Plugin Name: Foresight
 Plugin URI: http://chris-allen-lane.com
 Description: Helps you to keep an eye on Wordpress exploits.
 Author: Chris Lane
-Version: 1.0
+Version: 1.0.0
 Author URI: http://chris-allen-lane.com
 */
 
@@ -24,7 +24,8 @@ function cal_fs_create_admin_menus(){
 	wp_enqueue_script('cal_fs_main');
 	
 	# main menu
-	add_menu_page(
+	add_submenu_page(
+		'tools.php',
 		'Foresight',
 		'Foresight',
 		'manage_options',
@@ -50,9 +51,10 @@ function cal_foresight_view(){
 	# assemble the HTML
 	$html =<<<HTML
 	<div class='wrap'>
-	<h2>Foresight</h2>
-	<div id='cal_fs_tabs'>
-		<ul>
+		<div id="icon-tools" class="icon32"></div>
+		<h2>Foresight</h2>
+		<div id='cal_fs_tabs' style='margin-top: 15px;'>
+			<ul>
 HTML;
 	# print the tab navigation
 	$i = 1;
@@ -83,10 +85,10 @@ HTML;
 			wrapper_height = jQuery('div#wpwrap').height();
 			nag_height     = jQuery('div.update-nag').height();
 			jQuery("#cal_fs_tabs").tabs();
-			jQuery('div#cal_fs_tabs iframe').css('height', (wrapper_height - 250) - nag_height);
+			jQuery('div#cal_fs_tabs iframe').css('height', (wrapper_height - 265) - nag_height);
 		</script>
 		
-		<p style='margin-bottom:0;text-align:center'>Plugin by <a href='http://chris-allen-lane.com' target='_blank'>Chris Allen Lane</a></p>
+		<p style='margin-bottom:0;text-align:center'>Plugin by <a href='http://chris-allen-lane.com?ref=foresight' target='_blank'>Chris Allen Lane</a>.</p>
 	</div>
 HTML;
 	echo $html;
