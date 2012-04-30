@@ -89,7 +89,7 @@ HTML;
 			function cal_fs_resize(){				
 				window_height = jQuery(window).innerHeight();
 				nag_height    = jQuery('div.update-nag').height();
-				jQuery('div#cal_fs_tabs iframe').css('height', (window_height - 265) - nag_height);
+				jQuery('div#cal_fs_tabs iframe').css('height', (window_height - 270) - nag_height);
 			}
 			
 			// size the plugin on the first load
