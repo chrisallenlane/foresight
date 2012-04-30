@@ -1,4 +1,5 @@
-=== Foresight ===
+Foresight
+=========
 Contributors: chrisallenlane
 Donate link: http://chris-allen-lane.com
 Tags: admin, administration, anti-spam, manage, security
@@ -11,7 +12,8 @@ Foresight makes it easier for a Wordpress administrator to stay up-to-date
 on current Wordpress exploits.
 
 
-== Description ==
+Description
+-----------
 Foresight is designed to make it easier for administrators to
 keep track of security vulnerabilities which exist within Wordpress and
 Wordpress plugins. It does this by loading a tabbed display of known
@@ -26,8 +28,8 @@ factors, but may range from doing nothing to disabling the vulnerable
 plugin.)
 
 
-== Installation ==
-
+Installation
+------------
 You may install this plugin as you would any other:
 
 1. Upload it to `/wp-content/plugins/`
@@ -36,10 +38,11 @@ You may install this plugin as you would any other:
 More detailed installation instructions may be found [here](http://codex.wordpress.org/Managing_Plugins).
 
 
-== Frequently Asked Questions ==
+Frequently Asked Questions
+==========================
 
-= Why didn't you include <my preferred exploit tracker?> =
-
+Why didn't you include <my preferred exploit tracker?>
+------------------------------------------------------
 There are two possible reasons:
 
 1. I'm unaware of it.
@@ -52,7 +55,8 @@ should be added in, I'll do so. If not, it should be pretty easy to hack
 it in yourself. Open-source FTW!
 
 
-== Misc ==
+Misc
+====
 Know that the '1337Day' tab behaves slightly differently than the other
 tabs. Rather than loading Wordpress exploits by automatically, it will
 first require you to check a checkbox promising not to use the exploits
@@ -61,13 +65,9 @@ to manually search for Wordpress exploits by clicking on the 'search'
 link.
 
 
-== Screenshots ==
+Changelog
+=========
 
-1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
-the directory of the stable readme.txt, so in this case, `/tags/4.3/screenshot-1.png` (or jpg, jpeg, gif)
-2. This is the second screen shot
-
-== Changelog ==
-
-= 1.0 =
+1.0
+---
 * Initial release
