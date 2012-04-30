@@ -41,7 +41,7 @@ More detailed installation instructions may be found [here](http://codex.wordpre
 Frequently Asked Questions
 ==========================
 
-**Why didn't you include `\$my_preferred exploit tracker?`**
+**Why didn't you include `$my_preferred exploit tracker`?**
 
 There are two possible reasons:
 
@@ -50,7 +50,7 @@ There are two possible reasons:
 ([Packet Storm](http://packetstormsecurity.org/) is among this category.)
 
 If you'd like to see another tracker added to this plugin,
-[mailto:chris@chris-allen-lane.com](let me know). If I agree that it
+[let me know](mailto:chris@chris-allen-lane.com). If I agree that it
 should be added in, I'll do so. If not, it should be pretty easy to hack
 it in yourself. Open-source FTW!
 
@@ -67,5 +67,5 @@ link.
 
 Changelog
 =========
-**1.0**
+*1.0*
 * Initial release
