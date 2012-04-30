@@ -18,11 +18,11 @@ Foresight is designed to make it easier for administrators to
 keep track of security vulnerabilities which exist within Wordpress and
 Wordpress plugins. It does this by loading a tabbed display of known
 exploits into the Wordpress administrative backend. (It's available under
-'Tools' -> 'Foresight' in the admin side-var.)
+'Tools' -> 'Foresight' in the admin side-bar.)
 
 Using the plugin is simple: when you log in to perform your various
 administrative tasks, take a moment to browse through the known exploits.
-If you see any vulnerabilities in plugins you use, take the appropriate
+If you see vulnerabilities in that plugins you use, take the appropriate
 action. (What's "appropriate" of course, will vary based off of several
 factors, but may range from doing nothing to disabling the vulnerable
 plugin.)
@@ -41,8 +41,8 @@ More detailed installation instructions may be found [here](http://codex.wordpre
 Frequently Asked Questions
 ==========================
 
-Why didn't you include <my preferred exploit tracker?>
-------------------------------------------------------
+**Why didn't you include `\$my_preferred exploit tracker?`**
+
 There are two possible reasons:
 
 1. I'm unaware of it.
@@ -67,7 +67,5 @@ link.
 
 Changelog
 =========
-
-1.0
----
+**1.0**
 * Initial release
