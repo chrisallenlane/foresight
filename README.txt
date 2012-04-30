@@ -5,7 +5,7 @@ Tags: admin, administration, anti-spam, manage, security
 Requires at least: 2.0.2  
 Tested up to: 3.3.1  
 Stable tag: trunk  
-License: GPLv2  
+License: GPLv3  
 
 Foresight makes it easier for a Wordpress administrator to stay up-to-date
 on current Wordpress exploits.
