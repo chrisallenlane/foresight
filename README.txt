@@ -1,13 +1,15 @@
-=== Plugin Name ===
-Contributors: markjaquith, mdawaffe (this should be a list of wordpress.org userid's)
-Donate link: http://example.com/
-Tags: comments, spam
+=== Foresight ===
+Contributors: chrisallenlane
+Donate link: http://chris-allen-lane.com
+Tags: admin, administration, anti-spam, manage, security
 Requires at least: 2.0.2
-Tested up to: 2.1
-Stable tag: 4.3
-License: GPLv2
+Tested up to: 3.3.1
+Stable tag: trunk
+License: GPLv3
 
-Here is a short description of the plugin.  This should be no more than 150 characters.  No markup here.
+Foresight makes it easier for a Wordpress administrator to stay up-to-date
+on current Wordpress exploits.
+
 
 == Description ==
 
@@ -33,28 +35,33 @@ is the stable tag pointer.  Thus, if you develop in trunk, you can update the tr
 your in-development version, without having that information incorrectly disclosed about the current stable version
 that lacks those changes -- as long as the trunk's `readme.txt` points to the correct stable tag.
 
-    If no stable tag is provided, it is assumed that trunk is stable, but you should specify "trunk" if that's where
-you put the stable version, in order to eliminate any doubt.
 
 == Installation ==
 
-This section describes how to install the plugin and get it working.
+You may install this plugin as you would any other:
 
-e.g.
+1. Upload it to `/wp-content/plugins/`
+2. Activate the plugin through the 'Plugins' menu in WordPress
 
-1. Upload `plugin-name.php` to the `/wp-content/plugins/` directory
-1. Activate the plugin through the 'Plugins' menu in WordPress
-1. Place `<?php do_action('plugin_name_hook'); ?>` in your templates
+More detailed installation instructions may be found [here](http://codex.wordpress.org/Managing_Plugins).
+
+
 
 == Frequently Asked Questions ==
 
-= A question that someone might have =
+= Why didn't you include <my preferred exploit tracker?> =
 
-An answer to that question.
+There are two possible reasons:
 
-= What about foo bar? =
+1. I'm unaware of it.
+2. The tracker is configured to disallow being loaded into an iframe.
+([Packet Storm](http://packetstormsecurity.org/) is among this category.)
 
-Answer to foo bar dilemma.
+If you'd like to see another tracker added to this plugin,
+[mailto:chris@chris-allen-lane.com](let me know). If I agree that it
+should be added in, I'll do so. If not, it should be pretty easy to hack
+it in yourself. Open-source FTW!
+
 
 == Screenshots ==
 
@@ -65,47 +72,4 @@ the directory of the stable readme.txt, so in this case, `/tags/4.3/screenshot-1
 == Changelog ==
 
 = 1.0 =
-* A change since the previous version.
-* Another change.
-
-= 0.5 =
-* List versions from most recent at top to oldest at bottom.
-
-== Upgrade Notice ==
-
-= 1.0 =
-Upgrade notices describe the reason a user should upgrade.  No more than 300 characters.
-
-= 0.5 =
-This version fixes a security related bug.  Upgrade immediately.
-
-== Arbitrary section ==
-
-You may provide arbitrary sections, in the same format as the ones above.  This may be of use for extremely complicated
-plugins where more information needs to be conveyed that doesn't fit into the categories of "description" or
-"installation."  Arbitrary sections will be shown below the built-in sections outlined above.
-
-== A brief Markdown Example ==
-
-Ordered list:
-
-1. Some feature
-1. Another feature
-1. Something else about the plugin
-
-Unordered list:
-
-* something
-* something else
-* third thing
-
-Here's a link to [WordPress](http://wordpress.org/ "Your favorite software") and one to [Markdown's Syntax Documentation][markdown syntax].
-Titles are optional, naturally.
-
-[markdown syntax]: http://daringfireball.net/projects/markdown/syntax
-            "Markdown is what the parser uses to process much of the readme file"
-
-Markdown uses email style notation for blockquotes and I've been told:
-> Asterisks for *emphasis*. Double it up  for **strong**.
-
-`<?php code(); // goes in backticks ?>`
+* Initial release
